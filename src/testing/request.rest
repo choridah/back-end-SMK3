@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImZ1bGxOYW1lIjoiUmlkYSIsImVtYWlsIjoiY2hvcmlkYWhiMTNAZ21haWwuY29tIiwiYWRkcmVzcyI6IkpsLiBBc2xpbWl5YWggTGVyYW4iLCJjb250YWN0TnVtYmVyIjoiMDgyMTMxNzMxMjc5IiwiY29tcGFueSI6IlBUIEdyZXNraXQiLCJpYXQiOjE2NTkwNTY2NDEsImV4cCI6MTY1OTA1NjY2MX0.2Y8S7U9kgMxJi1JoEmQ9qeLkx0mQKG6y7VVRDpWxLpw
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "fullName": "Rida",
+    "email": "choridahb13@gmail.com",
+    "address": "Jl. Aslimiyah Leran",
+    "contactNumber": "082131731279",
+    "company": "PT Greskit",
+    "password": "0987poiu",
+    "confirmPassword": "0987poiu"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "choridahb13@gmail.com",
+    "password": "0987poiu"
+}
+
+###
+GET http://localhost:5000/token
