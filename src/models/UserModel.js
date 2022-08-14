@@ -8,6 +8,9 @@ const Users = db.define('users',
         fullName:{
             type:DataTypes.STRING
         },
+        username:{
+            type:DataTypes.STRING
+        },
         email:{
             type:DataTypes.STRING
         },
@@ -24,7 +27,7 @@ const Users = db.define('users',
             type:DataTypes.STRING
         },
         refresh_token:{
-            type:DataTypes.STRING
+            type:DataTypes.TEXT
         }
     },
     {

@@ -17,11 +17,12 @@ export const refreshToken = async(req,res) => {
             if(err) return res.sendStatus(403);
             const userId = user[0].id;
             const fullName = user[0].fullName;
+            const username = user[0].username;
             const email = user[0].email;
             const address = user[0].address;
             const contactNumber = user[0].contactNumber;
             const company = user[0].company;
-            const accessToken = jwt.sign({userId, fullName, email, address, contactNumber, company}, process.env.ACCESS_TOKEN_SECRET, {
+            const accessToken = jwt.sign({userId, fullName, username, email, address, contactNumber, company}, process.env.ACCESS_TOKEN_SECRET, {
                 expiresIn: '15s'
             });
             res.json({ accessToken });

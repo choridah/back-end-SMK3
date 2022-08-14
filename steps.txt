@@ -1,0 +1,1 @@
+nodemon src/scripts/index.js

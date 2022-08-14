@@ -1,5 +1,5 @@
 GET http://localhost:5000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsImZ1bGxOYW1lIjoiUmlkYSIsImVtYWlsIjoiY2hvcmlkYWhiMTNAZ21haWwuY29tIiwiYWRkcmVzcyI6IkpsLiBBc2xpbWl5YWggTGVyYW4iLCJjb250YWN0TnVtYmVyIjoiMDgyMTMxNzMxMjc5IiwiY29tcGFueSI6IlBUIEdyZXNraXQiLCJpYXQiOjE2NTkwODc1ODAsImV4cCI6MTY1OTA4NzU5NX0.rrkUFuG9RqH45KVzYlLgwRWaq7y0zGoubCAVn1g0KQ4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImZ1bGxOYW1lIjoiUmlkYSIsInVzZXJuYW1lIjoiY2hvcmlkYWhCIiwiZW1haWwiOiJjaG9yaWRhaGIxM0BnbWFpbC5jb20iLCJhZGRyZXNzIjoiSmwuIEFzbGltaXlhaCBMZXJhbiIsImNvbnRhY3ROdW1iZXIiOiIwODIxMzE3MzEyNzkiLCJjb21wYW55IjoiUFQgR3Jlc2tpdCIsImlhdCI6MTY2MDQ3NjQ3MSwiZXhwIjoxNjYwNDc2NDg2fQ.OAANrknemkw7ZYl4MidI7B2bLhMkbaqm50G1H8cqSA0
 
 ###
 POST http://localhost:5000/users
@@ -7,6 +7,7 @@ Content-Type: application/json
 
 {
     "fullName": "Rida",
+    "username": "choridahB",
     "email": "choridahb13@gmail.com",
     "address": "Jl. Aslimiyah Leran",
     "contactNumber": "082131731279",
@@ -20,7 +21,7 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-    "email": "choridahb13@gmail.com",
+    "username": "choridahB",
     "password": "0987poiu"
 }
 
