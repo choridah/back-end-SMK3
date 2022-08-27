@@ -1,14 +1,14 @@
 GET http://localhost:5000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImZ1bGxOYW1lIjoiUmlkYSIsInVzZXJuYW1lIjoiY2hvcmlkYWhCIiwiZW1haWwiOiJjaG9yaWRhaGIxM0BnbWFpbC5jb20iLCJhZGRyZXNzIjoiSmwuIEFzbGltaXlhaCBMZXJhbiIsImNvbnRhY3ROdW1iZXIiOiIwODIxMzE3MzEyNzkiLCJjb21wYW55IjoiUFQgR3Jlc2tpdCIsImlhdCI6MTY2MDQ3NjQ3MSwiZXhwIjoxNjYwNDc2NDg2fQ.OAANrknemkw7ZYl4MidI7B2bLhMkbaqm50G1H8cqSA0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImZ1bGxOYW1lIjoiUmlkYSIsInVzZXJuYW1lIjoiY2hvcmlkYWhCIiwiZW1haWwiOiJjaG9yaWRhaGIxM0BnbWFpbC5jb20iLCJhZGRyZXNzIjoiSmwuIEFzbGltaXlhaCBMZXJhbiIsImNvbnRhY3ROdW1iZXIiOiIwODIxMzE3MzEyNzkiLCJjb21wYW55IjoiUFQgR3Jlc2tpdCIsImlhdCI6MTY2MDU3MDQ5MiwiZXhwIjoxNjYwNTcwNTA3fQ.lwJ3XCYaDOt_YfPPtbMG7pJniyjTV3p4tW5HOV7yBKs
 
 ###
 POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-    "fullName": "Rida",
-    "username": "choridahB",
-    "email": "choridahb13@gmail.com",
+    "fullName": "Chozain",
+    "username": "ZAIN",
+    "email": "bahaque03@gmail.com",
     "address": "Jl. Aslimiyah Leran",
     "contactNumber": "082131731279",
     "company": "PT Greskit",

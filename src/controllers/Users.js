@@ -20,6 +20,9 @@ export const Register = async(req, res) => {
     if(password !== confirmPassword) return res.status(400).json({msg: "Confirm Password tidak cocok"});
     const salt = await bcrypt.genSalt();
     const hashPassword = await bcrypt.hash(password, salt);
+
+    // const usernameLoweredCase = username.toLowerCase();
+    
     try {
         await Users.create({
             fullName: fullName,
@@ -70,7 +73,7 @@ export const Login = async(req, res) => {
             });
             res.cookie('refreshToken', refreshToken, {
                 httpOnly: true,
-                maxAge: 24 * 60 * 60 * 1000 // dlm milis
+                maxAge: 24*60*60*1000 // dlm milis
                 // secure:true, // tdk perlu bila hanya di localhost
             });
             res.json({ accessToken });
